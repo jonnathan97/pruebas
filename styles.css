@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    padding: 1.5rem;
+    background-color: rgba(24, 24, 24, 0.432);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 .1rem rgba(255, 255, 255, 0.247);
+    font-family: 'Righteous', cursive;
+    letter-spacing: .2rem;
+}
+
+.container {
+    height: 100vh;
+    background-image: url('small.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.container-item {
+    background-color: rgba(0, 0, 0, 0.603);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .container {
+        background-image: url('img.jpg');
+        background-attachment: fixed;
+    }
+    h1 {
+        background-color: rgba(9, 90, 110, 0.404);
+    }
+}
